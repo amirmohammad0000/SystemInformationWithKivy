@@ -1,0 +1,157 @@
+MDScreen:
+    MDLabel:
+        text: "==================== System Information ===================="
+        halign: "center"
+        pos_hint: {"center_x": 0.5, "center_y": 0.99}
+        font_size: 20
+
+    MDLabel:
+        id: System
+        text: "System :"
+        halign: "center"
+        pos_hint: {"center_x": 0.2, "center_y": 0.96}
+        font_size: 15
+
+    MDLabel:
+        id: NodeName
+        text: "Node Name :"
+        halign: "center"
+        pos_hint: {"center_x": 0.2, "center_y": 0.93}
+        font_size: 15
+
+    MDLabel:
+        id: Release
+        text: "Release :"
+        halign: "center"
+        pos_hint: {"center_x": 0.2, "center_y": 0.90}
+        font_size: 15
+
+    MDLabel:
+        id: Version
+        text: "Version :"
+        halign: "center"
+        pos_hint: {"center_x": 0.2, "center_y": 0.87}
+        font_size: 15
+
+    MDLabel:
+        id: Machine
+        text: "Machine :"
+        halign: "center"
+        pos_hint: {"center_x": 0.2, "center_y": 0.84}
+        font_size: 15
+
+    MDLabel:
+        id: Processor
+        text: "Processor :"
+        halign: "center"
+        pos_hint: {"center_x": 0.2, "center_y": 0.81}
+        font_size: 15
+
+    MDLabel:
+        text: "==================== Boot Time ===================="
+        halign: "center"
+        pos_hint: {"center_x": 0.5, "center_y": 0.78}
+        font_size: 20
+
+    MDLabel:
+        id: BootTime
+        text: "Boot Time :"
+        halign: "center"
+        pos_hint: {"center_x": 0.2, "center_y": 0.75}
+        font_size: 15
+
+    MDLabel:
+        text: "==================== CPU Info ===================="
+        halign: "center"
+        pos_hint: {"center_x": 0.5, "center_y": 0.72}
+        font_size: 20
+
+    MDLabel:
+        id: PhysicalCores
+        text: "Physical Cores :"
+        halign: "center"
+        pos_hint: {"center_x": 0.2, "center_y": 0.69}
+        font_size: 15
+
+    MDLabel:
+        id: TotalCores
+        text: "Total Cores :"
+        halign: "center"
+        pos_hint: {"center_x": 0.2, "center_y": 0.66}
+        font_size: 15
+
+    MDLabel:
+        id: MaxFrequency
+        text: "Max Frequency :"
+        halign: "center"
+        pos_hint: {"center_x": 0.2, "center_y": 0.63}
+        font_size: 15
+
+    MDLabel:
+        id: MinFrequency
+        text: "Min Frequency :"
+        halign: "center"
+        pos_hint: {"center_x": 0.2, "center_y": 0.60}
+        font_size: 15
+
+    MDLabel:
+        id: CurrentFrequency
+        text: "Current Frequency :"
+        halign: "center"
+        pos_hint: {"center_x": 0.2, "center_y": 0.57}
+        font_size: 15
+
+    MDLabel:
+        id: CPUState
+        text: "CPU State :"
+        halign: "center"
+        pos_hint: {"center_x": 0.2, "center_y": 0.54}
+        font_size: 15
+
+    MDLabel:
+        id: TotalCPUUsage
+        text: "Total CPU Usage :"
+        halign: "center"
+        pos_hint: {"center_x": 0.2, "center_y": 0.51}
+        font_size: 15
+
+    MDLabel:
+        text: "==================== Memory Information ===================="
+        halign: "center"
+        pos_hint: {"center_x": 0.5, "center_y": 0.48}
+        font_size: 20
+
+    MDLabel:
+        id: Total
+        text: "Total :"
+        halign: "center"
+        pos_hint: {"center_x": 0.2, "center_y": 0.45}
+        font_size: 15
+
+    MDLabel:
+        id: Available
+        text: "Available :"
+        halign: "center"
+        pos_hint: {"center_x": 0.2, "center_y": 0.42}
+        font_size: 15
+
+    MDLabel:
+        id: Used
+        text: "Used :"
+        halign: "center"
+        pos_hint: {"center_x": 0.2, "center_y": 0.39}
+        font_size: 15
+
+    MDLabel:
+        id: PercentageMemory
+        text: "Percentage :"
+        halign: "center"
+        pos_hint: {"center_x": 0.2, "center_y": 0.36}
+        font_size: 15
+
+    MDRaisedButton:
+        text: "Get Information System"
+        pos_hint: {"center_x": 0.5, "center_y": 0.06}
+        font_size: 30
+        size_hint: [0.2, 0.1]
+        on_press: app.GetInformation()
